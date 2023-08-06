@@ -3,8 +3,8 @@ set -e
 
 ARCH=armel
 ARCH2=armv7
-DOCKER_VERSION=20.10.9
-COMPOSE_VERSION=2.5.1
+DOCKER_VERSION=24.0.5
+COMPOSE_VERSION=2.20.2
 DOCKER_DIR=/volume1/@docker
 
 echo "Downloading docker $DOCKER_VERSION-$ARCH"

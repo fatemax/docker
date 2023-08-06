@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-ARCH=armv7l
+ARCH=armel
 DOCKER_VERSION=20.10.9
 COMPOSE_VERSION=2.5.1
 DOCKER_DIR=/volume1/@docker

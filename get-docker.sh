@@ -2,6 +2,7 @@
 set -e
 
 ARCH=armel
+ARCH2=armv7
 DOCKER_VERSION=20.10.9
 COMPOSE_VERSION=2.5.1
 DOCKER_DIR=/volume1/@docker
@@ -55,7 +56,7 @@ echo "Creating docker group"
 egrep -q docker /etc/group || synogroup --add docker root
 
 echo "Installing docker compose $COMPOSE_VERSION"
-curl -SL "https://github.com/docker/compose/releases/download/v$COMPOSE_VERSION/docker-compose-linux-$ARCH" \
+curl -SL "https://github.com/docker/compose/releases/download/v$COMPOSE_VERSION/docker-compose-linux-$ARCH2" \
      --create-dirs -o /usr/local/lib/docker/cli-plugins/docker-compose
 chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 chgrp -R docker /usr/local/lib/docker
